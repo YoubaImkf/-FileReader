@@ -1,0 +1,7 @@
+Lorsqu'une méthode ou une variable est marquée comme protected, elle est accessible      :
+
+[__test utf8 ++ =  é"'(-è:_çà,.;/))="+°*ù$<<>&__]
+Dans la classe mère.
+Autres classes dans le même package que la classe mère.
+Les classes filles, quels que soient les packages.
+Le but principal du mot-clé protected est de faire hériter la méthode ou la variable au classes filles.
