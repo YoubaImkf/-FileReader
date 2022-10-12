@@ -1,3 +1,7 @@
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
 
 public class ReadReverseTxt extends ReaderAbstract implements ReaderInterface {
 	
@@ -11,9 +15,19 @@ public class ReadReverseTxt extends ReaderAbstract implements ReaderInterface {
 	}
 	
 	public void display() {
-		//https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html
-		StringBuilder txtReverse = new StringBuilder(super.text);//utf8 ?
-		 System.out.println(txtReverse.reverse());
+		ArrayList<String> texte = new ArrayList<>();
+		Scanner bufferedReader = new Scanner(new StringReader(text));
+		
+		while (bufferedReader.hasNext()) {
+			texte.add(bufferedReader.nextLine()); 
+		}
+		
+		Collections.reverse(texte); // inverse mon array :[Le Lorem Ipsum est., kayak, ca fonctionne ?]
+		//for-each loop (boucle for améliorée)
+		for (String texteLigne : texte) {
+			System.out.println(texteLigne);
+		}
+			
 	}
 
 }

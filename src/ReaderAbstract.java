@@ -27,10 +27,10 @@ public abstract class ReaderAbstract {
 	      //si y a une autre ligne à lire = True
 	      while(scanner.hasNextLine())
 	      {
-	    	  this.text += (scanner.nextLine() + "\n");
+	    	  this.text += (scanner.nextLine().toString() + "\n");
 //	          System.out.println(scanner.nextLine());
 	      }
-	      scanner.close();    
+	      scanner.close(); //nous ne voulons pas que le scanner scanne d’autres nouvelles lignes.
 	    }
 	    catch(IOException e)
 	    {
@@ -76,15 +76,22 @@ public abstract class ReaderAbstract {
 						break;
 					case("Q"):
 						clip.close();
+						
+						//[1]
 						break;
 					default: System.out.println("Wrong!!");
-					
-					
+					 
+						
+					}
+				
 				}
+						
+				
 			}
-			
 			
 		}
 		
-	}
+	
+	
+	
 }
