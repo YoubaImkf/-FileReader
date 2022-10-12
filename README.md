@@ -1,3 +1,6 @@
+#UML
+ ![diagram](FileReaderUML.png)
+
 # FILE READER💾
 
 Read txt and wav file.
