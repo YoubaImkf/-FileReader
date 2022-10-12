@@ -1,11 +1,11 @@
-# UML🖼 
- ![diagram](FileReaderUML.png)
 
 # FILE READER💾
 
-Read txt and wav file.
+Read .txt(3 ways) and .wav file.
 
-
+# UML🖼 
+ ![diagram](FileReaderUML.png)
+ 
 ## Installation
 
 Install with this command :
