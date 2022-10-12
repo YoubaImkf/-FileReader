@@ -23,7 +23,7 @@ public class Main {
 		break;
 		
 		case "B":
-			ReaderInterface rf = new ReadReverseTxt("txt.txt");
+			ReaderInterface rf = new ReadReverseLineTxt("txt.txt");
 			rf.read();
 			rf.display();
 		break;

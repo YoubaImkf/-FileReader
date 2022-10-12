@@ -3,9 +3,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class ReadReverseTxt extends ReaderAbstract implements ReaderInterface {
+public class ReadReverseLineTxt extends ReaderAbstract implements ReaderInterface {
 	
-	public ReadReverseTxt(String fileName) {
+	public ReadReverseLineTxt(String fileName) {
 		super.fileName =  fileName;
 	}
 	
