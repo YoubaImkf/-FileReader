@@ -16,10 +16,10 @@ public class ReadReverseLineTxt extends ReaderAbstract implements ReaderInterfac
 	
 	public void display() {
 		ArrayList<String> texte = new ArrayList<>();
-		Scanner bufferedReader = new Scanner(new StringReader(text));
+		Scanner scanner = new Scanner(new StringReader(text));
 		
-		while (bufferedReader.hasNext()) {
-			texte.add(bufferedReader.nextLine()); 
+		while (scanner.hasNext()) {
+			texte.add(scanner.nextLine()); 
 		}
 		
 		Collections.reverse(texte); // inverse mon array :[Le Lorem Ipsum est., kayak, ca fonctionne ?]
